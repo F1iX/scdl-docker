@@ -5,5 +5,6 @@ SoundCloud downloader dockerized. The original project can be found [here](https
 Usage:
 
 ```
-$ docker run -it -v $PWD:/app danihodovic/scdl:latest -l https://soundcloud.com/mommusic/dissidenten-fata-morgana-mom-re-edit
+$ docker build -t scdl-docker .
+$ docker run -it -v $PWD:/app scdl-docker -l https://soundcloud.com/f1ix -f --max-size 20M 
 ```
